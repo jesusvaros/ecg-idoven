@@ -1,9 +1,11 @@
 import { Box } from "@mui/material";
+import { Header } from "Components/Header/header";
+
 
 function App() {
   return (
     <div className="App">
-      <Box>header</Box>
+      <Header/>
       <Box>grafica</Box>
     </div>
   );
