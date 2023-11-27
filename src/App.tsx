@@ -1,12 +1,11 @@
-import { Box } from "@mui/material";
-import { Header } from "Components/Header/header";
-
+import { Header } from "components/Header/header";
+import { Home } from "pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Box>grafica</Box>
+      <Header />
+      <Home />
     </div>
   );
 }
