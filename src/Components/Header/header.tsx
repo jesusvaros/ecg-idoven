@@ -1,6 +1,6 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import { ReactComponent as LogoIdoven } from "Assets/idoven-logo.svg";
+import { ReactComponent as LogoIdoven } from "assets/idoven-logo.svg";
 
 export const Header = () => {
   return (
