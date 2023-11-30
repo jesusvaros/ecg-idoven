@@ -15,7 +15,7 @@ export const getParsedData = async (
 };
 
 export const getDataFile = async () => {
-  const response = await fetch("/data/14-29-05_data.zip");
+  const response = await fetch("/data/14-29-05_data_data.zip");
   const blob = await response.blob();
 
   const zip = new JSZip();
