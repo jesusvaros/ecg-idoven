@@ -41,8 +41,6 @@ const options = {
 
 const LineChartECG: React.FC<LineChartECGProps> = () => {
   const { data, loadData } = useDataContext();
-
-  console.log(data);
   
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
