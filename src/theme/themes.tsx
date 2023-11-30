@@ -21,10 +21,10 @@ declare module "@mui/material/styles" {
 export const theme = {
   palette: {
     primary: {
-      main: "#01161e",
+      main: "#011c28",
     },
     secondary: {
-      main: "#364492",
+      main: "#3f51b5",
       light: "#6372c8",
     },
     error: {

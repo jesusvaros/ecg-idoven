@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 import { getDataFile, getParsedData, getReader } from 'utils/dataUtils'
-import { DataContextProps, DataProps, ReaderType } from 'utils/types'
+import { DataContextProps, ReaderType } from 'utils/types'
 
 export const DataContext = createContext<DataContextProps | undefined>(
   undefined
@@ -10,7 +10,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   children
 }) => {
   const [reader, setReader] = useState<ReaderType>(undefined)
-  const [data, setData] = useState<DataProps[]>([])
+  const [data, setData] = useState<Number[][]>([])
 
   const lazySetReader = async () => {
     if (!reader) {

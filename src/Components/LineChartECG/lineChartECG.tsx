@@ -1,47 +1,19 @@
 import React from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
-import { useDataContext } from "contexts/useDataContext/useDataContext";
+import { getHighChartOptions } from "utils/getHighChartOptions/getHighChartOptions";
 
-interface LineChartECGProps {
-  data?: number[];
+export interface LineChartECGProps {
+  data: Number[][];
 }
 
-const options = {
-  chart: {
-    zoomType: "xy",
-  },
-  title: {
-    text: "ECG Data",
-  },
-  xAxis: {
-    type: "datetime",
-  },
-  yAxis: {
-    title: {
-      text: "Value",
-    },
-  },
-  series: [
-    {
-      name: "Data",
-      data: [],
-    },
-  ],
-  rangeSelector: {
-    selected: 1,
-  },
-  navigator: {
-    enabled: true,
-  },
-  scrollbar: {
-    enabled: true,
-  },
-};
+const LineChartECG = ({ data }: LineChartECGProps) => {
+  console.log(data);
 
-const LineChartECG: React.FC<LineChartECGProps> = () => {
-  const { data, loadData } = useDataContext();
+  const options = getHighChartOptions({data});
   
+  console.log(options)
+
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
 

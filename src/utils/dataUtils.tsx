@@ -1,16 +1,17 @@
 import JSZip from "jszip";
-import { DataProps, ReaderType } from "./types";
+import { ReaderType } from "./types";
 
 export const getParsedData = async (
   reader: ReaderType
-): Promise<DataProps[]> => {
+): Promise<Number[][]> => {
   const linesToDisplay = await readNextLines(reader);
-  return linesToDisplay!.map((line) => {
+  return linesToDisplay!.map((index,line) => {
+    if(index / 10)
     const values = line.split(",");
-    return {
-      time: parseFloat(values[0]),
-      value: parseInt(values[1]),
-    };
+    return [
+      parseFloat(values[0]),
+      parseInt(values[1]),
+    ];
   });
 };
 
