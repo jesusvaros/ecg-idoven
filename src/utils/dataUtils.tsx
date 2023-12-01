@@ -5,12 +5,12 @@ export const getParsedData = async (
   reader: ReaderType
 ): Promise<Number[][]> => {
   const linesToDisplay = await readNextLines(reader);
-  return linesToDisplay!.map((index,line) => {
-    if(index / 10)
+  return linesToDisplay!.map((line) => {
+
     const values = line.split(",");
     return [
       parseFloat(values[0]),
-      parseInt(values[1]),
+      parseFloat(values[1]),
     ];
   });
 };

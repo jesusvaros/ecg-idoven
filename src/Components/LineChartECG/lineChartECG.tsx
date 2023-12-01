@@ -8,11 +8,7 @@ export interface LineChartECGProps {
 }
 
 const LineChartECG = ({ data }: LineChartECGProps) => {
-  console.log(data);
-
-  const options = getHighChartOptions({data});
-  
-  console.log(options)
+  const options = getHighChartOptions({ data });
 
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };

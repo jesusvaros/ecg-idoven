@@ -21,7 +21,7 @@ declare module "@mui/material/styles" {
 export const theme = {
   palette: {
     primary: {
-      main: "#011c28",
+      main: "#252323",
     },
     secondary: {
       main: "#3f51b5",
@@ -31,7 +31,7 @@ export const theme = {
       main: "#f44336",
     },
     warning: {
-      main: "#ff9800",
+      main: "#f5e31a",
     },
     common: {
       white: "#fff",

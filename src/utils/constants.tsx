@@ -1,1 +1,1 @@
-export const NUMBER_OF_DATA = 10000;
+export const NUMBER_OF_DATA = 5000;
