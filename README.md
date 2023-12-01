@@ -27,7 +27,7 @@ The tech stack used was:
 To execute this project you will need to do the next steps:
 
 After cloning the project, download the .zip data located in [releases](https://github.com/jesusvaros/ecg-idoven/releases/tag/v1.0.0)
-and add it to the [dataFolder] (https://github.com/jesusvaros/ecg-idoven/tree/v1.0.0/public/data).
+and add it to the [dataFolder](https://github.com/jesusvaros/ecg-idoven/tree/v1.0.0/public/data).
 
 Then you can:
 
