@@ -8,7 +8,6 @@ declare module "@mui/material/styles" {
   interface Palette {
     primary: PaletteColor;
     secondary: PaletteColor;
-    error: PaletteColor;
     warning: PaletteColor;
   }
 
@@ -26,9 +25,6 @@ export const theme = {
     secondary: {
       main: "#3f51b5",
       light: "#6372c8",
-    },
-    error: {
-      main: "#f44336",
     },
     warning: {
       main: "#f5e31a",

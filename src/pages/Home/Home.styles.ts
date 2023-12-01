@@ -3,7 +3,7 @@ import { Box, Button, styled } from "@mui/material";
 export const PageContainer = styled(Box)`
   display: flex;
   height: calc(100vh - 64px);
-  background-color: black;
+  background-color: ${({ theme }) => theme.palette.primary.main};
   flex-direction: column;
   gap: 12px;
 `;
